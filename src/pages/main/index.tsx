@@ -1,13 +1,17 @@
-import { TodoItem } from '../../components/TodoItem'
+import { TodoList } from '../../components/TodoList'
 import * as S from './styles'
 
 export function Main() {
   return (
     <S.Main>
-      <TodoItem task="Tarefa 1" />
-      <TodoItem task="Tarefa 2" />
-      <TodoItem task="Tarefa 3" />
-      <TodoItem task="Tarefa 4" />
+      <TodoList
+        todos={[
+          { id: '1', task: 'Um' },
+          { id: '2', task: 'Dois' },
+          { id: '3', task: 'Três' },
+          { id: '4', task: 'Quatro' },
+        ]}
+      />
     </S.Main>
   )
 }
