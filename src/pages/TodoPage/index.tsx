@@ -2,11 +2,12 @@ import { useState } from 'react'
 import { AddTodoForm } from '../../components/AddTodoForm'
 import { TodoList } from '../../components/TodoList'
 import * as S from './styles'
+import { Todo } from '../../models/TodoModel'
 
 export function TodoPage() {
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState<Todo[]>([])
 
-  const handleAddTodo = (task: string) => {
+  const handleAdd = (task: string) => {
     const newTodo = { id: Date.now().toString(), task }
     setTodos([...todos, newTodo])
   }
@@ -17,8 +18,8 @@ export function TodoPage() {
 
   return (
     <S.TodoPage>
-      <h1>Todo List</h1>
-      <AddTodoForm onAdd={handleAddTodo} />
+      <h1>Lista de Tarefas</h1>
+      <AddTodoForm onAdd={handleAdd} />
       <TodoList
         todos={todos}
         onComplete={handleComplete}

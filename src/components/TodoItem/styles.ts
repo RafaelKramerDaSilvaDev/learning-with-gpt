@@ -10,5 +10,3 @@ export const TodoItem = styled.div`
   width: 100%;
   padding: 20px;
 `
-
-export const Span = styled.span``

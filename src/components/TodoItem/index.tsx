@@ -10,7 +10,7 @@ type TodoItemProps = {
 export function TodoItem({ task, onComplete, onRemove }: TodoItemProps) {
   return (
     <S.TodoItem>
-      <S.Span>{task}</S.Span>
+      <span>{task}</span>
       <Button onClick={onComplete}>Completar</Button>
       <Button onClick={onRemove}>Remover</Button>
     </S.TodoItem>
