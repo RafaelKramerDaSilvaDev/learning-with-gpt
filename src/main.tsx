@@ -1,11 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { TodoPage } from './pages/TodoPage'
 import { GlobalStyle } from './styles/global-styles'
-import { Main } from './pages/main'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <GlobalStyle />
-    <Main />
+    <TodoPage />
   </React.StrictMode>,
 )

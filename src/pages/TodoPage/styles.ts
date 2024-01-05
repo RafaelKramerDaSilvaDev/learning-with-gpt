@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Main = styled.div`
+export const TodoPage = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
