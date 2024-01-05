@@ -12,7 +12,3 @@ export const TodoItem = styled.div`
 `
 
 export const Span = styled.span``
-
-export const Button = styled.button`
-  padding: 10px;
-`

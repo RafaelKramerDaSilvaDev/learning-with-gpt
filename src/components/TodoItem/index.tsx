@@ -1,3 +1,4 @@
+import { Button } from '../Button'
 import * as S from './styles'
 
 type TodoItemProps = {
@@ -10,8 +11,8 @@ export function TodoItem({ task, onComplete, onRemove }: TodoItemProps) {
   return (
     <S.TodoItem>
       <S.Span>{task}</S.Span>
-      <S.Button onClick={onComplete}>Completar</S.Button>
-      <S.Button onClick={onRemove}>Remover</S.Button>
+      <Button onClick={onComplete}>Completar</Button>
+      <Button onClick={onRemove}>Remover</Button>
     </S.TodoItem>
   )
 }

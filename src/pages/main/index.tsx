@@ -1,9 +1,11 @@
+import { AddTodoForm } from '../../components/AddTodoForm'
 import { TodoList } from '../../components/TodoList'
 import * as S from './styles'
 
 export function Main() {
   return (
     <S.Main>
+      <AddTodoForm />
       <TodoList
         todos={[
           { id: '1', task: 'Um' },
