@@ -6,7 +6,7 @@ export function saveTodos(todos: Todo[]) {
   localStorage.setItem(TODO_STORAGE_KEY, JSON.stringify(todos))
 }
 
-export function loadtodos(): Todo[] {
+export function loadTodos(): Todo[] {
   const storedTodos = localStorage.getItem(TODO_STORAGE_KEY)
   return storedTodos ? JSON.parse(storedTodos) : []
 }

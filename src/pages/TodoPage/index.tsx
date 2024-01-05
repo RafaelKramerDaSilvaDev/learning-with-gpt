@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { AddTodoForm } from '../../components/AddTodoForm'
 import { TodoList } from '../../components/TodoList'
-import * as S from './styles'
 import { Todo } from '../../models/TodoModel'
+import * as S from './styles'
 
 export function TodoPage() {
   const [todos, setTodos] = useState<Todo[]>([])
